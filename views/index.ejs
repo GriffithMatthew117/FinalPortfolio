@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Matthew || Griffith</title>
+</head>
+
+<body>
+    <main>
+        <section id="full-screen">
+            <section class="row">
+                <section id="left">
+                    <div id="square-box">
+                        <div id="square-content">
+                            <h1 id="first-name">MATTHEW</h1>
+                            <h1 id="last-name">GRIFFITH</h1>
+                        </div>
+                    </div>
+                    <div id="subtitle">
+                        <h2 id="web">Web Developer</h2>
+                        <h2 id="amp">&amp;</h2>
+                        <h2 id="design">Designer</h2>
+                    </div>
+                    <div id="social-icons">
+                        <a href="https://github.com/GriffithMatthew117">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/msgsdesign/">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="right">
+                    <div id="img-row" class="animated fadeInUpBig">
+                        <!-- <img id="display-img" class="threed" src="https://i.imgur.com/C4MpmrQ.jpg">
+                        <img id="display-img" class="threed" src="https://i.imgur.com/3r7ZH3N.jpg">
+                        <img id="display-img" class="threed" src="https://i.imgur.com/qwXumyh.jpg"> -->
+                    </div>
+
+                    <section id="links">
+                        <div class="link">
+                            <h4 class="link-title">ABOUT</h4>
+                            <button class="collapsible"></button>
+
+                            <div class="content">
+                                <p class="link-para">I’m a developer and designer based in San Diego, California. 
+                                    <br>I learned web development at
+                                    Origin Code Academy in 2018 and over the last ten years I've tought myself design. 
+                                    <br>I have extensive knowledge of the
+                                    <b>Adobe Creative Suite</b> as well as
+                                    <b>Sketch</b> and
+                                    <b>Cinema 4D</b>.</p>
+                            </div>
+                            <div id="triangle-topright"></div>
+                        </div>
+                        <div class="link">
+                            <h4 class="link-title">GALLERY</h4>
+                            <button class="collapsible"></button>
+
+                            <div class="content">
+                                <p class="link-para">In progress</p>
+                            </div>
+                            <div id="triangle-topright"></div>
+                        </div>
+                        <div class="link">
+                            <h4 class="link-title">PROJECTS</h4>
+                            <button class="collapsible"></button>
+                            <div class="content">
+                                <p class="link-para">In progress</p>
+                            </div>
+                            <div id="triangle-topright"></div>
+                        </div>
+                        <div class="link">
+                            <h4 class="link-title">CONTACT</h4>
+                            <button class="collapsible"></button>
+                            <div id="contact" class="content">
+                                <div class="link-para">
+                                    <form action="/contact">
+                                        <input type="text" id="name-field" name="name" placeholder="Your name">
+                                        <input type="email" id="email-field" name="email" placeholder="Your email">
+                                        <textarea id="subject" name="subject" placeholder="Message"></textarea>
+                                        <input id="submit-btn" type="submit" value="Submit">
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="triangle-topright"></div>
+                        </div>
+
+                    </section>
+
+                </section>
+
+            </section>
+        </section>
+
+        <section id="mobile-body">
+            <section id="mobile-nav">
+                <div id="ham-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </section>
+            <div id="mobile">
+                <div id="box">
+                    <div id="box-content">
+                        <h1 id="first-name">MATTHEW</h1>
+                        <h1 id="last-name">GRIFFITH</h1>
+                    </div>
+                </div>
+                <div id="subtitle">
+                    <h4 id="web">Web Developer</h4>
+                    <h4 id="amp">&amp;</h4>
+                    <h4 id="design">Designer</h4>
+                </div>
+                <div id="scroll-div">
+                    <p class="scroll-indicator fa fa-chevron-down"></p>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
